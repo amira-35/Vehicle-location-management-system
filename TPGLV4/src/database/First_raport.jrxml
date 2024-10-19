@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d828d329-0932-4128-ad48-bb3e844a231c">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="56"/>
+	<parameter name="nom" class="java.lang.String"/>
+	<parameter name="prenom" class="java.lang.String"/>
+	<parameter name="NumeroContrat" class="java.lang.String"/>
+	<parameter name="CouDeLocation" class="java.lang.String"/>
+	<parameter name="TypeDePaimet" class="java.lang.String"/>
+	<parameter name="KilometrageDebut" class="java.lang.String"/>
+	<parameter name="Permis" class="java.lang.String"/>
+	<parameter name="Observation" class="java.lang.String"/>
+	<parameter name="Nreservation" class="java.lang.String"/>
+	<parameter name="Vehiucle" class="java.lang.String"/>
+	<parameter name="modele" class="java.lang.String"/>
+	<parameter name="TypeDeContrat" class="java.lang.String"/>
+	<parameter name="dure" class="java.lang.String"/>
+	<parameter name="DateCotrat" class="java.lang.String"/>
+	<parameter name="DateDeSortir" class="java.lang.String"/>
+	<parameter name="DateDeRetour" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="89" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="79" uuid="3c4f4e6d-468e-4a7e-a9f4-59538db5212e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="30"/>
+				</textElement>
+				<text><![CDATA[Hello Raport]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="48" y="29" width="100" height="20" uuid="b37eaaa9-194f-44e1-ba08-f18a0961f382"/>
+				<text><![CDATA[Date de Contrat]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="176" y="29" width="100" height="20" uuid="48c717a9-5d77-49bd-8723-d5ded19a1350"/>
+				<textFieldExpression><![CDATA[$P{DateCotrat}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<pageFooter>
+		<band height="397" splitType="Stretch">
+			<staticText>
+				<reportElement x="48" y="0" width="100" height="20" uuid="9ffad39d-ff83-45e7-8d54-9e7543e94001"/>
+				<text><![CDATA[Numero De Contrat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="289" y="0" width="100" height="20" uuid="bce76d2b-df16-43b1-aa05-0455205e1f6f"/>
+				<text><![CDATA[Permis]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="289" y="39" width="100" height="20" uuid="2b0c6fe9-03d4-4c65-bb3c-356e09de45f1"/>
+				<text><![CDATA[Nom]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="389" y="78" width="100" height="20" uuid="6206339b-f9fd-4f1c-bc7f-63e0c15342e3"/>
+				<textFieldExpression><![CDATA[$P{prenom}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="289" y="78" width="100" height="20" uuid="30145f30-6eee-4fda-b601-7160939574f6"/>
+				<text><![CDATA[Prenom]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="389" y="39" width="100" height="20" uuid="259224bd-f952-4246-978e-8c6abea80cb9"/>
+				<textFieldExpression><![CDATA[$P{nom}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="289" y="118" width="121" height="20" uuid="43798bd6-8511-4aec-a6b8-7b169958eb2e"/>
+				<text><![CDATA[Numero De Reservation]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="48" y="196" width="100" height="20" uuid="42c9da43-a456-4364-9143-c5ac17981c7f"/>
+				<text><![CDATA[Dure]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="289" y="154" width="121" height="20" uuid="0a97373f-d8c3-48ad-b61d-ee4050d4b360"/>
+				<text><![CDATA[Matricule de Vehicule]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="289" y="196" width="100" height="20" uuid="9d6a3e95-5a42-4d58-ae29-7c9fe45d055e"/>
+				<text><![CDATA[Modele]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="48" y="39" width="100" height="20" uuid="bad5875a-9a2d-4fbc-ac48-8565dba2650a"/>
+				<text><![CDATA[Type De Contrat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="48" y="78" width="100" height="20" uuid="490e20e6-c464-400d-a870-e51e62b59a98"/>
+				<text><![CDATA[Date De Sortir]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="48" y="118" width="100" height="20" uuid="dd9e5cf6-86ee-4a79-a49c-6668e5c16098"/>
+				<text><![CDATA[Date De Retour]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="154" width="128" height="20" uuid="84608514-fa58-4bad-b5d8-b1d29ef326bf"/>
+				<text><![CDATA[Cout De Location Par Jour]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="48" y="233" width="100" height="20" uuid="41d51b05-f545-4654-9b19-06ca46046842"/>
+				<text><![CDATA[Type de Paiment]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="282" y="233" width="107" height="20" uuid="096ddc2a-ef1c-4efd-9ac0-c487a3768cd4"/>
+				<text><![CDATA[Kilometrage début]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="48" y="285" width="100" height="20" uuid="938977f0-192d-42e1-b56e-2edc75360da8"/>
+				<text><![CDATA[Obersvation:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="148" y="78" width="100" height="20" uuid="9982699f-e9e9-445b-8baf-afe5bccdc173"/>
+				<textFieldExpression><![CDATA[$P{DateDeSortir}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="148" y="118" width="100" height="20" uuid="3c7a5620-8b18-4184-9931-e3f41345348d"/>
+				<textFieldExpression><![CDATA[$P{DateDeRetour}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="148" y="196" width="100" height="20" uuid="d3dd55be-7bc9-4d51-ae6a-c989c6673362"/>
+				<textFieldExpression><![CDATA[$P{dure}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="148" y="39" width="100" height="20" uuid="de5ba4aa-3f13-4c74-bf8c-2dd54d3eab9e"/>
+				<textFieldExpression><![CDATA[$P{TypeDeContrat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="389" y="191" width="100" height="20" uuid="c9c596eb-8485-4ee6-964b-917e2861c356"/>
+				<textFieldExpression><![CDATA[$P{modele}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="410" y="154" width="100" height="20" uuid="69842918-0e10-417f-b694-dcd36fb028c8"/>
+				<textFieldExpression><![CDATA[$P{Vehiucle}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="410" y="118" width="100" height="20" uuid="a744470c-0308-4cf0-bbbc-218769508566"/>
+				<textFieldExpression><![CDATA[$P{Nreservation}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="389" y="0" width="100" height="20" uuid="dbd876bd-3e82-4be3-a2bd-46784724cd0b"/>
+				<textFieldExpression><![CDATA[$P{Permis}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="148" y="233" width="100" height="20" uuid="47c905e6-2508-4af8-bd7c-370d838e5da3"/>
+				<textFieldExpression><![CDATA[$P{TypeDePaimet}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="148" y="154" width="100" height="20" uuid="c4a4d158-4f87-46aa-a7ab-c0f6286d5b7f"/>
+				<textFieldExpression><![CDATA[$P{CouDeLocation}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="148" y="0" width="100" height="20" uuid="f5a81929-4a64-4e65-8b98-b84414f352fc"/>
+				<textFieldExpression><![CDATA[$P{NumeroContrat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="163" y="285" width="392" height="112" uuid="74f6035b-3219-4d9e-ae73-b55f5a0f9c56"/>
+				<textFieldExpression><![CDATA[$P{Observation}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="389" y="233" width="135" height="20" uuid="4a303f6b-51c0-462c-8d34-f669f94972f0"/>
+				<textFieldExpression><![CDATA[$P{KilometrageDebut}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>
